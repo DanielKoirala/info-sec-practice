@@ -9,6 +9,10 @@ def get_index():
 def get_different():
     return 'This is different!'
 
+@route('/newmessage')
+def get_newmessage():
+    return ("This is a new message")
+
 if 'PYTHONANYWHERE_DOMAIN' in os.environ:
     application = default_app()
 else:
